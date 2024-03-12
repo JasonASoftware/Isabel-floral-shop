@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0" />
+    <!--     <meta name="viewport" content="width=1000; user-scalable=0;" /> -->
+
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=PT+Sans+Narrow:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+     <title>FLORAL WEBSITE</title>
+  </head>
+ 
+  <body id="daWholeThang">
+    <header id="daHeader">
+         <h1 class="floralLogo">Isabel Floral Shop</h1>
+      <!-- if no logo we can change it to <h1> of her title name -->
+      <nav class="headingSize">
+        <ul id="floralNav">
+          <li class="firstLi"><a href="#">HOME</a></li>
+          <li class="secondLi"><a href="#pricing">GALLERY</a></li>
+          <li class="thirdLi"><a href="#contacting">CONTACT ME</a></li>
+        </ul>
+      </nav>
+   
+      
+    </header>
+    <main id="mainBody">
+      <!--       <section>
+       <p>hello this is my floral website where I will be showing all different types of flower arrangements.</p>
+  
+  </section> -->
+      <section id="slideShow">
+        <!-- image slider starts-->
+        <div class="slider">
+          <div class="slides">
+            <!-- radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <input type="radio" name="radio-btn" id="radio4" />
+            <!-- radio buttons end-->
+            <div class="slide first">
+              <img
+                src="https://veldkampsflowers.imgix.net/images/item/FiestaBouquetLarge-16012145625.jpg?w=950&auto=format"
+                alt="random floral"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fasset.bloomnation.com%2Fc_pad%2Cd_vendor%3Aglobal%3Acatalog%3Aproduct%3Aimage.png%2Cf_auto%2Cfl_preserve_transparency%2Cq_auto%2Fv1612437706%2Fvendor%2F5424%2Fcatalog%2Fproduct%2F2%2F0%2F20200204041945_file_5e38f0e17579f_5e38f0ecda9ac.jpeg&f=1&nofb=1&ipt=5f66e9bcf9c4722689a6f369c52ac7dac883839ca3dcf17c257f844be03067b8&ipo=images"
+                alt="flower"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://asset.bloomnation.com/c_pad,d_vendor:global:catalog:product:image.png,f_auto,fl_preserve_transparency,q_auto/v1644459790/vendor/4223/catalog/product/2/0/20160126012950_file_56a6cc0e48de0.jpg"
+                alt="slideThree"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.flowersbyflourish.com%2Fwp-content%2Fuploads%2F2015%2F02%2Fbouquets-pink.jpg&f=1&nofb=1&ipt=c4cb5e345ffff1ec693c0d3b454d5d9f412a1eb2b78d5673ec2d68782981404f&ipo=images"
+                alt="slideFour"
+              />
+            </div>
+            <!--slides images end-->
+
+            <!-- auto navigations start -->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+          </div>
+          <!-- auto navigations start -->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+        </div>
+        <script type="text/javascript">
+          var counter = 1;
+          setInterval(function () {
+            document.getElementById("radio" + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+              counter = 1;
+            }
+          }, 5000);
+        </script>
+      </section>
+      <section id="pricing">
+        <h2>Our Flowers</h2>
+        <h5>CONTACT US FOR PRICING!!!</h5>
+        <!--     <h4>
+         <i class="fas fa-car" style="font-size:26px">car</i>PICK UP ORDERS OR WE ALSO OFFER A DELIVERY SERVICE <br />
+      </h4> -->
+        <section class="flowerShop">
+          <img
+            class="priceOne"
+            src="https://sf.tac-cdn.net/images/products/large/T119-1.jpg?auto=webp&quality=80"
+            alt="flower one"
+          />
+          <p class="description">[describing what it brings]</p>
+        </section>
+        <section class="flowerShop" id="space">
+          <img
+            class="priceOne"
+            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/easter-flowers-1647232648.jpg?crop=0.492xw:0.657xh;0.508xw,0.137xh&resize=640:*"
+            alt="flower two"
+          />
+          <p class="description">[describing what it brings]</p>
+        </section>
+        <section class="flowerShop">
+          <img
+            class="priceOne"
+            src="https://www.fnp.com/images/pr/l/v20210111034134/16-pink-roses-arrangement-in-wooden-base_1.jpg"
+            alt="flower three"
+          />
+          <p class="description">[describing what it brings]</p>
+        </section>
+        <section class="flowerShop" id="between">
+          <img
+            class="priceOne"
+            src="https://www.avasflowers.net/img/prod_img/avasflowers-classic-rose-and-lily-bouquet.jpg"
+            alt="flower four"
+          />
+          <p class="description">[describing what it brings]</p>
+        </section>
+        <section class="flowerShop">
+          <img
+            class="priceOne"
+            src="https://pyxis.nymag.com/v1/imgs/a22/053/b2ad5ec07981e919f9f9e3eeea9f8a9971-mothersembraceflowers.rdeep-vertical.h600.jpg"
+            alt="flower five"
+          />
+          <p class="description">[describing what it brings]</p>
+        </section>
+        <section class="flowerShop" id="room">
+          <img
+            class="priceOne"
+            src="https://pyxis.nymag.com/v1/imgs/a22/053/b2ad5ec07981e919f9f9e3eeea9f8a9971-mothersembraceflowers.rdeep-vertical.h600.jpg"
+            alt="flower five"
+          />
+          <p class="description">[describing what it brings]</p>
+        </section>
+      </section>
+      <section id="contacting">
+        <div class="container">
+          <div class="contact-parent">
+            <div class="contact-child child1">
+              <h3>Contact Us</h3>
+              <p class="insta">
+                <a href="instagram.com"
+                  ><i class="fa fa-instagram" style="font-size: 50px"></i
+                ></a>
+              </p>
+              <p class="phone">
+                <i class="material-icons" style="font-size: 36px">call</i> Let's
+                Talk <br />
+                <a href="tel:0000000000"><span> 000-000-0000</span></a>
+              </p>
+              <p class="support">
+                <i class="material-icons" style="font-size: 36px">mail</i>
+                General Support <br />
+                <a href="mailto:noreply@noreply.com<">Email Me</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
